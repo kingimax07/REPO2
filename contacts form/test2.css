@@ -1,0 +1,60 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* Navigation styles */
+.nav-left, .nav-right {
+    width: 100px; /* Adjust width as needed */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.nav-middle {
+    height: 60px; /* Adjust height as needed */
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Grid styles */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    grid-template-rows: repeat(2, 1fr);    /* Creates 2 rows */
+    gap: 20px; /* This controls the space between grid items */
+    
+    /* Alternative if you need separate control:
+    column-gap: 30px;  // space between columns
+    row-gap: 15px;     // space between rows
+    */
+}
+
+.grid-item {
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 150px; /* Set a minimum height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
